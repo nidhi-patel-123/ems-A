@@ -18,7 +18,7 @@ const Loader = () => (
 const TABS = [
   { key: 'changepassword', label: 'Change Password', icon: <LockClosedIcon className="w-5 h-5 mr-1" /> },
   { key: 'profile', label: 'Profile', icon: <UserIcon className="w-5 h-5 mr-1" /> },
-  { key: 'notifications', label: 'Notifications', icon: <BellIcon className="w-5 h-5 mr-1" /> },
+  // { key: 'notifications', label: 'Notifications', icon: <BellIcon className="w-5 h-5 mr-1" /> },
 ];
 
 const SettingsPage = () => {
@@ -332,7 +332,7 @@ const SettingsPage = () => {
                 </div>
                 <button
                   type="submit"
-                  className={`w-full bg-[#113a69] text-white py-2 rounded-lg hover:bg-[#113a69] transition disabled:bg-blue-400 flex items-center justify-center`}
+                  className={`w-full bg-[#113a69] text-white py-2 rounded-lg hover:bg-[#1b5393] transition flex items-center justify-center`}
                   disabled={loading || !settings.email}
                   aria-busy={loading}
                 >

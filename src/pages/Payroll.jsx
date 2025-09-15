@@ -315,7 +315,7 @@ const Payroll = () => {
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
         <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
           <div className="flex items-center gap-4 flex-1">
-            <div className="relative flex-1 max-w-md">
+            {/* <div className="relative flex-1 max-w-md">
               <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
@@ -324,7 +324,7 @@ const Payroll = () => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-2">
               <FaFilter className="text-gray-400" />
@@ -561,11 +561,10 @@ const Payroll = () => {
               <button
                 key={pageNum}
                 onClick={() => setPage(pageNum)}
-                className={`px-3 py-2 rounded-lg transition-colors ${
-                  page === pageNum
+                className={`px-3 py-2 rounded-lg transition-colors ${page === pageNum
                     ? "bg-[#113a69] text-white"
                     : "border border-gray-300 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 {pageNum}
               </button>
