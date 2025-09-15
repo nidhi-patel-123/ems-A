@@ -13,12 +13,10 @@ import Employees from "./pages/Employees";
 import AdminLogin from "./pages/AdminLogin";
 import { useAuth } from "./hooks/useAuth";
 import Calendar from "./components/Calendar";
-// import MyProfile from "./components/MyProfile";
 
 function App() {
   const { isAuthenticated } = useAuth();
 
-  // Protected route component
   const ProtectedRoute = ({ children }) => {
     if (!isAuthenticated) {
       return <Navigate to="/admin/login" replace />;
@@ -29,7 +27,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Admin Login Route */}
         <Route
           path="/admin/login"
           element={
@@ -37,13 +34,11 @@ function App() {
           }
         />
 
-        {/* Protected Admin Routes */}
         <Route
           path="/*"
           element={
             <ProtectedRoute>
               <div className="flex">
-                {/* Sidebar */}
                 <Sidebar />
 
                 {/* Main Content Area */}
