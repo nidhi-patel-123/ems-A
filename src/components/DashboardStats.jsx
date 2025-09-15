@@ -6,7 +6,7 @@ function DashboardStats() {
   return (
     <div>
       <Dashboard />
-      {/* <DepartmentDashboard/> */}
+      
     </div>
   )
 }

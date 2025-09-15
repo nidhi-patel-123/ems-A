@@ -77,7 +77,7 @@ const EmployeeAdd = ({ onSuccess }) => {
 
   // Handle cancel
   const handleCancel = () => {
-    onSuccess(); // Closes form and refreshes list
+    onSuccess(); 
   };
 
   return (

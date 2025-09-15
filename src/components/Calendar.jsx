@@ -48,9 +48,7 @@ function CustomToolbar({ label, onNavigate, onView }) {
         <button type="button" onClick={() => onView("day")}>
           Day
         </button>
-        {/* <button type="button" onClick={() => onView("agenda")}>
-          Agenda
-        </button> */}
+     
       </div>
     </div>
   );
