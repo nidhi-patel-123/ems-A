@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// For file export
+
 import * as XLSX from "xlsx";
 
 const Reports = () => {
@@ -23,7 +23,7 @@ const Reports = () => {
     );
   });
 
-  // Export to Excel
+  
   const exportExcel = () => {
     const worksheet = XLSX.utils.json_to_sheet(filtered);
     const workbook = XLSX.utils.book_new();
@@ -31,7 +31,7 @@ const Reports = () => {
     XLSX.writeFile(workbook, "Reports.xlsx");
   };
 
-  // Export to CSV
+
   const exportCSV = () => {
     const worksheet = XLSX.utils.json_to_sheet(filtered);
     const csv = XLSX.utils.sheet_to_csv(worksheet);
@@ -43,7 +43,7 @@ const Reports = () => {
     a.click();
   };
 
-  // Export to PDF (simple print to PDF)
+  
   const exportPDF = () => {
     window.print();
   };
@@ -75,7 +75,7 @@ const Reports = () => {
         </div>
       </div>
 
-      {/* Filters */}
+      
       <div className="flex flex-wrap gap-3 mb-4">
         <input
           type="text"
