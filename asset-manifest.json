@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ems-A/static/css/main.3fc2ee81.css",
+    "main.js": "/ems-A/static/js/main.68a181c4.js",
+    "static/js/453.d7878ace.chunk.js": "/ems-A/static/js/453.d7878ace.chunk.js",
+    "index.html": "/ems-A/index.html",
+    "main.3fc2ee81.css.map": "/ems-A/static/css/main.3fc2ee81.css.map",
+    "main.68a181c4.js.map": "/ems-A/static/js/main.68a181c4.js.map",
+    "453.d7878ace.chunk.js.map": "/ems-A/static/js/453.d7878ace.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fc2ee81.css",
+    "static/js/main.68a181c4.js"
+  ]
+}
